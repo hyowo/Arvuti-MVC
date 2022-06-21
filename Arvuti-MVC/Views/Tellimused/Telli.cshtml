@@ -1,0 +1,83 @@
+﻿@model Arvuti_MVC.Models.TellimusModel
+@using Arvuti_MVC.Models
+
+@{
+    ViewData["Title"] = "Telli";
+}
+
+<h4>Telli</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Telli">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nimi" class="control-label"></label>
+                <input asp-for="Nimi" class="form-control" />
+                <span asp-validation-for="Nimi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Arvuti" class="control-label"></label>
+                <br />
+                <select asp-for="Arvuti">
+                    @for (var i = 0; i < Komponendid.arvutid.Count; i++)
+                    {
+                        <option>@Komponendid.arvutid[i]</option>
+                    }
+                </select>
+                <span asp-validation-for="Arvuti" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Monitor" class="control-label"></label>
+                <br />
+                <select asp-for="Monitor">
+                    @for (var i = 0; i < Komponendid.monitorid.Count; i++)
+                    {
+                        <option>@Komponendid.monitorid[i]</option>
+                    }
+                </select>
+                <span asp-validation-for="Monitor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Klaviatuur" class="control-label"></label>
+                <br />                
+                <select asp-for="Klaviatuur">
+                    @for (var i = 0; i < Komponendid.klaviatuurid.Count; i++)
+                    {
+                        <option>@Komponendid.klaviatuurid[i]</option>
+                    }
+                </select>
+                <span asp-validation-for="Klaviatuur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hiir" class="control-label"></label>
+                <br />
+                <select asp-for="Hiir">
+                    @for (var i = 0; i < Komponendid.hiired.Count; i++)
+                    {
+                        <option>@Komponendid.hiired[i]</option>
+                    }
+                </select>
+                <span asp-validation-for="Hiir" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lisainfo" class="control-label"></label>
+                <input asp-for="Lisainfo" class="form-control" />
+                <span asp-validation-for="Lisainfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Telli" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Tagasi</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

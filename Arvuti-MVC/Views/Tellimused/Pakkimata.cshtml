@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TellimusModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nimi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Arvuti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Monitor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klaviatuur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hiir)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tellimus in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Nimi)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Arvuti)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Monitor)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Klaviatuur)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Hiir)
+                </td>
+                <td>
+                    <a asp-controller="Tellimused" asp-action="Paki" asp-route-id="@tellimus.ID">Paki</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

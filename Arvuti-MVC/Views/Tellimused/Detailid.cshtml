@@ -1,0 +1,89 @@
+﻿@model Arvuti_MVC.Models.TellimusModel
+
+@{
+    ViewData["Title"] = "Detailid";
+}
+
+<h1>Detailid</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nimi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nimi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Arvuti)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Arvuti)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AruvtiOlemas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AruvtiOlemas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Monitor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Monitor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MonitorOlemas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MonitorOlemas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Klaviatuur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Klaviatuur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KlaviatuurOlemas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KlaviatuurOlemas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Hiir)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Hiir)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HiirOlemas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HiirOlemas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lisainfo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lisainfo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pakitud)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pakitud)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ValjaSaadetud)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ValjaSaadetud)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Muuda" asp-route-id="@Model?.ID">Muuda</a> |
+    <a asp-action="Index">Tagasi</a>
+</div>

@@ -1,0 +1,84 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Arvuti_MVC
+build_property.RootNamespace = Arvuti_MVC
+build_property.ProjectDir = C:\Users\Erik\Documents\Proge Tood EZ PROFIT\Arvuti-MVC\Arvuti-MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Erik\Documents\Proge Tood EZ PROFIT\Arvuti-MVC\Arvuti-MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Detailid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxEZXRhaWxpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Muuda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxNdXVkYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Pakkimata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxQYWtraW1hdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Pooleli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxQb29sZWxpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Statistika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxTdGF0aXN0aWthLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Telli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxUZWxsaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Tellimused/Valjastamata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsbGltdXNlZFxWYWxqYXN0YW1hdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Documents/Proge Tood EZ PROFIT/Arvuti-MVC/Arvuti-MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nr6zeq0c4s

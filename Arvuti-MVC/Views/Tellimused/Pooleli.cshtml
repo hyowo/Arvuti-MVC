@@ -1,0 +1,81 @@
+﻿@model IEnumerable<TellimusModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nimi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Arvuti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Monitor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klaviatuur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hiir)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tellimus in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Nimi)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Arvuti)
+                    @if (!tellimus.AruvtiOlemas)
+                    {
+                        @*link to setdone controller with arvuti and id as the parameters*@
+                        <a asp-action="MargiOlemas" asp-route-id="@tellimus.ID" asp-route-komponent="arvuti" asp-route-id="@tellimus.ID">Margi Olemas</a>
+                    }
+                    else
+                    {
+                        <span>(Olemas!)</span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Monitor)
+                    @if (!tellimus.MonitorOlemas)
+                    {
+                        @*link to setdone controller with arvuti and id as the parameters*@
+                        <a asp-action="MargiOlemas" asp-route-id="@tellimus.ID" asp-route-komponent="monitor" asp-route-id="@tellimus.ID">Margi Olemas</a>
+                    }
+                    else
+                    {
+                        <span>(Olemas!)</span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Klaviatuur)
+                    @if (!tellimus.KlaviatuurOlemas)
+                    {
+                        @*link to setdone controller with arvuti and id as the parameters*@
+                        <a asp-action="MargiOlemas" asp-route-id="@tellimus.ID" asp-route-komponent="klaviatuur" asp-route-id="@tellimus.ID">Margi Olemas</a>
+                    }
+                    else
+                    {
+                        <span>(Olemas!)</span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(x => tellimus.Hiir)
+                    @if (!tellimus.HiirOlemas)
+                    {
+                        @*link to setdone controller with arvuti and id as the parameters*@
+                        <a asp-action="MargiOlemas" asp-route-id="@tellimus.ID" asp-route-komponent="hiir" asp-route-id="@tellimus.ID">Margi Olemas</a>
+                    }
+                    else
+                    {
+                        <span>(Olemas!)</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

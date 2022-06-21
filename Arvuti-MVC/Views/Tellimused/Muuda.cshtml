@@ -1,0 +1,89 @@
+﻿@model Arvuti_MVC.Models.TellimusModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TellimusModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Muuda">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Nimi" class="control-label"></label>
+                <input asp-for="Nimi" class="form-control" />
+                <span asp-validation-for="Nimi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Arvuti" class="control-label"></label>
+                <input asp-for="Arvuti" class="form-control" />
+                <span asp-validation-for="Arvuti" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Monitor" class="control-label"></label>
+                <input asp-for="Monitor" class="form-control" />
+                <span asp-validation-for="Monitor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Klaviatuur" class="control-label"></label>
+                <input asp-for="Klaviatuur" class="form-control" />
+                <span asp-validation-for="Klaviatuur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hiir" class="control-label"></label>
+                <input asp-for="Hiir" class="form-control" />
+                <span asp-validation-for="Hiir" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lisainfo" class="control-label"></label>
+                <input asp-for="Lisainfo" class="form-control" />
+                <span asp-validation-for="Lisainfo" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="AruvtiOlemas" /> @Html.DisplayNameFor(model => model.AruvtiOlemas)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="MonitorOlemas" /> @Html.DisplayNameFor(model => model.MonitorOlemas)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="KlaviatuurOlemas" /> @Html.DisplayNameFor(model => model.KlaviatuurOlemas)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="HiirOlemas" /> @Html.DisplayNameFor(model => model.HiirOlemas)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Pakitud" /> @Html.DisplayNameFor(model => model.Pakitud)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ValjaSaadetud" /> @Html.DisplayNameFor(model => model.ValjaSaadetud)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvesta" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Tagasi</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
